@@ -1,6 +1,7 @@
 # Description:
 Java UI program that manages a store with clients, suppliers and products. <br />
 Has a notifications system that notifies a client when a product goes on sale or is re-stocked. <br />
+<br />
 Complies with all the OOP standards but could also be improved. <br />
 Can import a file directly using '-Dimport=<file_path>'. <br />
 
@@ -11,7 +12,7 @@ Can import a file directly using '-Dimport=<file_path>'. <br />
 
 ## How to run:
 Execute the following command:
-'''
+```
 cd woo-core && make clean && make && cd .. && cd woo-app && make clean && make && cd .. 
 java -cp <po-uuilib.jar_path>:<woo-app.jar_path>:<woo-core.jar_path> woo.app.App
-'''
+```
