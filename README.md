@@ -2,6 +2,7 @@
 Java UI program that manages a store with clients, suppliers and products. <br />
 Has a notifications system that notifies a client when a product goes on sale or is re-stocked. <br />
 Complies with all the OOP standards but could also be improved. <br />
+Can import a file directly using '-Dimport=<file_path>'. <br />
 
 # Design Patterns:
 * State -> Used to manage client's ranking inside the store
@@ -9,4 +10,8 @@ Complies with all the OOP standards but could also be improved. <br />
 * Facade -> Used to connect our app (frontend) with our backend (core)
 
 ## How to run:
-javac <po-uuilib.jar_path:>
+Execute the following command:
+'''
+cd woo-core && make clean && make && cd .. && cd woo-app && make clean && make && cd .. 
+java -cp <po-uuilib.jar_path>:<woo-app.jar_path>:<woo-core.jar_path> woo.app.App
+'''
